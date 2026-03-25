@@ -1,0 +1,212 @@
+@media (max-width: 768px) {
+
+    body { cursor: auto; }
+    #puntero, #anillo-puntero { display: none; }
+
+    nav {
+        padding: 18px 20px;
+        gap: 12px;
+    }
+
+    .enlaces-nav {
+        display: none;
+    }
+
+    .iconos-nav {
+        gap: 8px;
+    }
+
+    #inicio {
+        padding: 0 20px;
+        min-height: 100svh;
+        align-items: flex-start;
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .contenido-inicio {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .tarjeta-foto {
+        order: -1;
+        justify-content: center;
+    }
+
+    .marco-foto {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circulo-foto {
+        width: 100%;
+        height: 100%;
+    }
+
+    #foto-perfil {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tarjetita-anos {
+        bottom: -10px;
+        right: -14px;
+        padding: 8px 12px;
+        min-width: 85px;
+    }
+
+    .tarjetita-anos .numero {
+        font-size: 1.2rem;
+    }
+
+    .tarjetita-anos .texto-anos {
+        font-size: 0.55rem;
+    }
+
+    .titulo-nombre {
+        font-size: clamp(36px, 10vw, 52px);
+        margin-bottom: 12px;
+    }
+
+    .linea-rol {
+        font-size: clamp(17px, 5vw, 22px);
+        margin-bottom: 16px;
+    }
+
+    .descripcion-corta {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 14px;
+    }
+
+    .tecnologias {
+        gap: 6px;
+        margin-bottom: 28px;
+    }
+
+    .botones-inicio {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .boton-principal,
+    .boton-secundario {
+        justify-content: center;
+        padding: 14px 20px;
+        font-size: 0.8rem;
+    }
+
+    .contacto {
+        display: block;
+        width: 100%;
+    }
+
+    .boton-secundario {
+        width: 100%;
+    }
+
+    .desplegable {
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        font-size: 0.8rem;
+        padding: 10px 14px;
+    }
+
+    #bloque-proyectos {
+        padding: 80px 20px;
+    }
+
+    .cabecera-proyectos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .subtitulo-seccion {
+        max-width: 100%;
+    }
+
+    .rejilla-tarjetas {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .vista-previa {
+        height: 150px;
+    }
+
+    #bloque-estudios {
+        padding: 80px 20px;
+    }
+
+    .interior-estudios {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .tarjeta-estudio {
+        padding: 18px 16px;
+        gap: 14px;
+    }
+
+    .nombre-estudio {
+        font-size: 0.875rem;
+    }
+
+    footer {
+        padding: 24px 20px;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .aparece {
+        transform: translateY(14px);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    nav {
+        padding: 20px 30px;
+    }
+
+    #inicio {
+        padding: 0 30px;
+    }
+
+    .contenido-inicio {
+        grid-template-columns: 1fr 320px;
+        gap: 40px;
+    }
+
+    .marco-foto {
+        width: 300px;
+        height: 300px;
+    }
+
+    #bloque-proyectos {
+        padding: 100px 30px;
+    }
+
+    .rejilla-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #bloque-estudios {
+        padding: 100px 30px;
+    }
+
+    .interior-estudios {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 50px;
+    }
+
+    footer {
+        padding: 24px 30px;
+    }
+}
