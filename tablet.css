@@ -1,0 +1,220 @@
+/* ============================================================
+   tablet.css — Estilos responsivos para tablets (769px–1024px)
+   Enlazar en index.html DESPUÉS de CSS.css y movil.css:
+   <link rel="stylesheet" href="tablet.css" type="text/css" />
+   ============================================================ */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* ── Cursor personalizado ── */
+    body { cursor: auto; }
+    #puntero, #anillo-puntero { display: none; }
+
+    /* ── Navbar ── */
+    nav {
+        padding: 20px 36px;
+        gap: 16px;
+    }
+
+    .enlaces-nav {
+        gap: 24px;
+    }
+
+    .enlace-nav {
+        font-size: 0.8rem;
+    }
+
+    /* ── Fondo Vanta ── */
+    #fondo-vanta {
+        position: fixed;
+    }
+
+    /* ── Sección Hero (Inicio) ── */
+    #inicio {
+        padding: 0 36px;
+        min-height: 100svh;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        align-items: center;
+    }
+
+    .contenido-inicio {
+        grid-template-columns: 1fr 340px;
+        gap: 48px;
+        max-width: 100%;
+    }
+
+    /* ── Foto de perfil ── */
+    .tarjeta-foto {
+        justify-content: center;
+    }
+
+    .marco-foto {
+        width: 300px;
+        height: 300px;
+    }
+
+    .circulo-foto {
+        width: 100%;
+        height: 100%;
+    }
+
+    #foto-perfil {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tarjetita-anos {
+        bottom: -8px;
+        right: -12px;
+        padding: 10px 14px;
+        min-width: 100px;
+    }
+
+    .tarjetita-anos .numero {
+        font-size: 1.5rem;
+    }
+
+    .tarjetita-anos .texto-anos {
+        font-size: 0.6rem;
+    }
+
+    /* ── Textos Hero ── */
+    .titulo-nombre {
+        font-size: clamp(38px, 5.5vw, 58px);
+        margin-bottom: 14px;
+    }
+
+    .linea-rol {
+        font-size: clamp(18px, 2.5vw, 26px);
+        margin-bottom: 20px;
+    }
+
+    .descripcion-corta {
+        font-size: 1rem;
+        line-height: 1.8;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .tecnologias {
+        gap: 6px;
+        margin-bottom: 32px;
+    }
+
+    .pastilla-tec {
+        font-size: 0.65rem;
+        padding: 4px 9px;
+    }
+
+    /* ── Botones Hero ── */
+    .botones-inicio {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .boton-principal,
+    .boton-secundario {
+        padding: 12px 22px;
+        font-size: 0.8rem;
+    }
+
+    .desplegable {
+        font-size: 0.8rem;
+        padding: 10px 16px;
+    }
+
+    /* ── Sección Proyectos ── */
+    #bloque-proyectos {
+        padding: 100px 36px;
+    }
+
+    .cabecera-proyectos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 48px;
+    }
+
+    .subtitulo-seccion {
+        max-width: 100%;
+    }
+
+    /* 2 columnas en tablet: las 2 primeras tarjetas reales y la WIP abajo */
+    .rejilla-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    /* La tercera tarjeta (WIP) ocupa el ancho completo */
+    .rejilla-tarjetas .tarjeta-proyecto:last-child {
+        grid-column: 1 / -1;
+        max-width: 480px;
+        justify-self: start;
+    }
+
+    .vista-previa {
+        height: 160px;
+    }
+
+    .cuerpo-tarjeta {
+        padding: 18px;
+        gap: 10px;
+    }
+
+    .titulo-tarjeta {
+        font-size: 0.95rem;
+    }
+
+    .descripcion-tarjeta {
+        font-size: 0.8rem;
+    }
+
+    /* ── Sección Estudios ── */
+    #bloque-estudios {
+        padding: 100px 36px;
+    }
+
+    .interior-estudios {
+        grid-template-columns: 240px 1fr;
+        gap: 52px;
+        align-items: start;
+    }
+
+    .columna-izq-estudios {
+        position: sticky;
+        top: 100px;
+    }
+
+    .titulo-seccion {
+        font-size: clamp(28px, 4vw, 44px);
+    }
+
+    .tarjeta-estudio {
+        padding: 20px 22px;
+        gap: 16px;
+    }
+
+    .nombre-estudio {
+        font-size: 0.9rem;
+    }
+
+    .lugar-estudio {
+        font-size: 0.78rem;
+    }
+
+    .fecha-estudio {
+        font-size: 0.68rem;
+    }
+
+    /* ── Footer ── */
+    footer {
+        padding: 26px 36px;
+    }
+
+    /* ── Animaciones de aparición ── */
+    .aparece {
+        transform: translateY(18px);
+    }
+}
